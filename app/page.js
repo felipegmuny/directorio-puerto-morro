@@ -338,9 +338,7 @@ const emergencyContacts = [
 ];
 
 const condoContacts = [
- const condoContacts = [
   { name: "Oficina ASOPROPMO", role: "Atención General", phone: "0424-8612508", emoji: "🏢" }
-];
 ];
 
 export default function HomeDirectory() {
@@ -459,7 +457,6 @@ export default function HomeDirectory() {
               <ChevronRight className={`w-6 h-6 text-slate-400 transition-transform duration-300 ${showCondoContacts ? 'rotate-90' : ''}`} />
             </button>
 
-            {/* Solo se renderiza si showCondoContacts es verdadero */}
             {showCondoContacts && (
               <div className="p-6 pt-0 border-t border-slate-200 mt-2 animate-in slide-in-from-top-2 duration-300">
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 pt-4">
