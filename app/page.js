@@ -338,10 +338,9 @@ const emergencyContacts = [
 ];
 
 const condoContacts = [
-  { name: "Oficina ASOPROPMO", role: "Atención General", phone: "0424-8612508", emoji: "🏢" },
-  { name: "Rodolfo La Rosa", role: "Servicios Generales", phone: "N/A", emoji: "🔧" },
-  { name: "Jesús Cumana", role: "Servicios Generales", phone: "N/A", emoji: "🔧" },
-  { name: "Carlos Infante", role: "Servicios Generales", phone: "N/A", emoji: "🔧" }
+ const condoContacts = [
+  { name: "Oficina ASOPROPMO", role: "Atención General", phone: "0424-8612508", emoji: "🏢" }
+];
 ];
 
 export default function HomeDirectory() {
