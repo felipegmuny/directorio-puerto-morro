@@ -329,7 +329,6 @@ const emergencyContacts = [
   { name: "PoliSotillo (Caribbean Mall)", phone: "0424-8784898", note: "Casilla de seguridad policial", emoji: "🚓" },
   { name: "Protección Civil Sotillo", phone: "0422-7447232", note: "Alt: 0422-7447231 / 0422-7447233", emoji: "🛟" },
   { name: "Condominio y Ambiente", phone: "0416-6811855", note: "Dirección de ambiente y gestión", emoji: "🌿" },
-  { name: "Planeamiento Urbano Sotillo", phone: "0412-1867669", note: "Alcaldía de Sotillo", emoji: "📐" },
   { name: "Bomberos Lechería", phone: "0281-9923730", note: "Atención e incendios Urbaneja", emoji: "🚒" },
   { name: "Poliurbaneja", phone: "0412-0410410", note: "Policía Municipal de Urbaneja", emoji: "🚓" },
   { name: "Hospital Luis Razetti", phone: "0281-2676740", note: "Hospital Universitario", emoji: "🏥" },
@@ -340,21 +339,9 @@ const emergencyContacts = [
 
 const condoContacts = [
   { name: "Oficina ASOPROPMO", role: "Atención General", phone: "0424-8612508", emoji: "🏢" },
-  { name: "Alejandra Hernández", role: "Administración", phone: "N/A", emoji: "📋" },
-  { name: "Leitza", role: "Administración", phone: "N/A", emoji: "📋" },
-  { name: "Vanesa", role: "Administración", phone: "N/A", emoji: "📋" },
   { name: "Rodolfo La Rosa", role: "Servicios Generales", phone: "N/A", emoji: "🔧" },
   { name: "Jesús Cumana", role: "Servicios Generales", phone: "N/A", emoji: "🔧" },
-  { name: "Carlos Infante", role: "Servicios Generales", phone: "N/A", emoji: "🔧" },
-  { name: "Nohelys Ortiz Diaz", role: "Junta Directiva", phone: "N/A", emoji: "👥" },
-  { name: "Antoun Beilouni", role: "Junta Directiva", phone: "N/A", emoji: "👥" },
-  { name: "Alida de Noriega", role: "Junta Directiva", phone: "N/A", emoji: "👥" },
-  { name: "Yenni Romero", role: "Junta Directiva", phone: "N/A", emoji: "👥" },
-  { name: "Zoila Gomez", role: "Junta Directiva", phone: "N/A", emoji: "👥" },
-  { name: "Lys Castillo", role: "Junta Directiva", phone: "N/A", emoji: "👥" },
-  { name: "Eduardo Delgado", role: "Junta Directiva", phone: "N/A", emoji: "👥" },
-  { name: "Carmen Rasines", role: "Junta Directiva", phone: "N/A", emoji: "👥" },
-  { name: "Faten Antabi", role: "Junta Directiva", phone: "N/A", emoji: "👥" }
+  { name: "Carlos Infante", role: "Servicios Generales", phone: "N/A", emoji: "🔧" }
 ];
 
 export default function HomeDirectory() {
@@ -366,7 +353,6 @@ export default function HomeDirectory() {
   const [isSending, setIsSending] = useState(false);
   const [showDemoSuccess, setShowDemoSuccess] = useState(false);
   
-  // Estado para el acordeón de contactos del condominio
   const [showCondoContacts, setShowCondoContacts] = useState(false);
 
   const activeCategory = selectedCategoryKey ? categoriesData[selectedCategoryKey] : null;
